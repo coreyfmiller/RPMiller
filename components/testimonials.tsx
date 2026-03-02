@@ -6,9 +6,9 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
 const testimonials = [
   {
     quote:
-      "Ron has handled our farm's books for over fifteen years. He understands agriculture like no one else, and his advice has saved us thousands.",
+      "Ron has handled our company's books for over fifteen years. He understands local business like no one else, and his advice has saved us thousands.",
     name: "David MacArthur",
-    role: "Oromocto-area Farmer",
+    role: "Local Business Owner",
   },
   {
     quote:

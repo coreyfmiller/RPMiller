@@ -41,8 +41,8 @@ export function LocalTrust() {
               Proudly Serving the Oromocto Area
             </h2>
             <p className="mt-5 text-pretty leading-relaxed text-muted-foreground">
-              For over two decades, I have helped families,
-              farmers, and business owners across the Saint John River Valley
+              For over three decades, I have helped families
+              and business owners across the Saint John River Valley
               navigate their financial futures with confidence. My office in
               Lakeville Corner means local knowledge paired with professional
               expertise.
