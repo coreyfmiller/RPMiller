@@ -1,15 +1,30 @@
+"use client"
+
 import { ArrowRight, Shield, TrendingUp, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { useState, useEffect } from "react"
+
+const backgroundImages = [
+    "/tree-hero.jpg",
+    "/water-hero.png"
+]
 
 export function HeroTest() {
+    const [bgImage, setBgImage] = useState(backgroundImages[0])
+
+    useEffect(() => {
+        const randomIndex = Math.floor(Math.random() * backgroundImages.length)
+        setBgImage(backgroundImages[randomIndex])
+    }, [])
+
     return (
         <section className="relative overflow-hidden bg-primary px-6 py-24 lg:py-36">
-            {/* Background Image at 30% opacity */}
-            <div className="absolute inset-0 z-0 opacity-30">
+            {/* Background Image at 20% opacity */}
+            <div className="absolute inset-0 z-0 opacity-20">
                 <Image
-                    src="/tree-hero.jpg"
-                    alt="Tree Hero Background"
+                    src={bgImage}
+                    alt="Hero Background"
                     fill
                     className="object-cover object-center"
                     priority
