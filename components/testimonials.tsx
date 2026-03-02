@@ -7,25 +7,25 @@ const testimonials = [
   {
     quote:
       "This firm has handled our farm's books for over fifteen years. They understand agriculture like no other firm, and their advice has saved us thousands.",
-    name: "David T.",
+    name: "William S.",
     role: "Oromocto-area Farmer",
   },
   {
     quote:
       "Switching to this team was the best decision for our restaurant. They simplified everything and helped us plan for growth we didn't think was possible.",
-    name: "Sarah & James L.",
+    name: "Emma & Michael T.",
     role: "Small Business Owners, Fredericton",
   },
   {
     quote:
       "As a first-time home buyer, I had no idea how to manage my finances properly. The team walked me through everything with patience and genuine care.",
-    name: "Michelle K.",
+    name: "Jessica R.",
     role: "Personal Tax Client",
   },
   {
     quote:
       "Professional, responsive, and always available when we need them. They've been an invaluable partner for our non-profit organization.",
-    name: "Robert P.",
+    name: "Daniel H.",
     role: "Executive Director, NB Community Foundation",
   },
 ]
@@ -93,8 +93,8 @@ export function Testimonials() {
                   key={i}
                   onClick={() => setCurrent(i)}
                   className={`h-2 rounded-full transition-all ${i === current
-                      ? "w-6 bg-primary"
-                      : "w-2 bg-border hover:bg-muted-foreground"
+                    ? "w-6 bg-primary"
+                    : "w-2 bg-border hover:bg-muted-foreground"
                     }`}
                   aria-label={`Go to testimonial ${i + 1}`}
                 />
