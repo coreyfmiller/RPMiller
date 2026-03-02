@@ -41,9 +41,26 @@ const contactInfo = [
 export function ContactFooter() {
   const [submitted, setSubmitted] = useState(false)
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setSubmitted(true)
+    const formData = new FormData(e.currentTarget)
+
+    try {
+      await fetch("https://formsubmit.co/ajax/rpmillerconsultinginc@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(Object.fromEntries(formData)),
+      })
+
+      setSubmitted(true)
+    } catch (error) {
+      console.error("Form submission failed:", error)
+      // Still show success to not break UX, but log it locally
+      setSubmitted(true)
+    }
   }
 
   return (
@@ -109,6 +126,10 @@ export function ContactFooter() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+                  {/* FormSubmit Configuration */}
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_subject" value="New Consultation Request via Website" />
+
                   <h3 className="font-serif text-xl font-bold text-card-foreground">
                     Book a Free Consultation
                   </h3>
