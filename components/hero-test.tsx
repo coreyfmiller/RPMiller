@@ -89,7 +89,7 @@ export function HeroTest() {
                     <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3">
                         {[
                             { icon: Users, label: "Clients Served", value: "500+" },
-                            { icon: TrendingUp, label: "Years of Experience", value: "20+" },
+                            { icon: TrendingUp, label: "Years of Experience", value: "30+" },
                             { icon: Shield, label: "Satisfaction Rate", value: "99%" },
                         ].map(({ icon: Icon, label, value }) => (
                             <div key={label} className="flex flex-col items-center gap-2">
