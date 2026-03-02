@@ -3,9 +3,9 @@ import { MapPin, Handshake, Heart, TreePine } from "lucide-react"
 const highlights = [
   {
     icon: MapPin,
-    title: "Lakeville Corner Roots",
+    title: "Deep Local Roots",
     description:
-      "Founded and headquartered in Lakeville Corner, we understand the unique needs of rural New Brunswick communities.",
+      "Founded with roots in the Fredericton and Oromocto area, we understand the unique needs of New Brunswick communities.",
   },
   {
     icon: Handshake,
