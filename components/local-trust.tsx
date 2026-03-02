@@ -5,19 +5,19 @@ const highlights = [
     icon: MapPin,
     title: "Deep Local Roots",
     description:
-      "Founded with roots in the Fredericton and Oromocto area, we understand the unique needs of New Brunswick communities.",
+      "Founded with roots in the Fredericton and Oromocto area, I understand the unique needs of New Brunswick communities.",
   },
   {
     icon: Handshake,
     title: "Personal Relationships",
     description:
-      "We're not a faceless firm. You'll work directly with an experienced professional who knows your name and your goals.",
+      "This isn't a faceless firm. You'll work directly with me, an experienced professional who knows your name and your goals.",
   },
   {
     icon: Heart,
     title: "Community First",
     description:
-      "We sponsor local events, support Oromocto-area charities, and reinvest in the community that shaped us.",
+      "I sponsor local events, support Oromocto-area charities, and reinvest in the community that shaped me.",
   },
   {
     icon: TreePine,
@@ -35,15 +35,15 @@ export function LocalTrust() {
           {/* Text side */}
           <div>
             <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
-              Our Roots
+              My Roots
             </p>
             <h2 className="mt-3 text-balance font-serif text-3xl font-bold text-foreground sm:text-4xl">
               Proudly Serving the Oromocto Area
             </h2>
             <p className="mt-5 text-pretty leading-relaxed text-muted-foreground">
-              For over two decades, RP Miller Consulting has helped families,
+              For over two decades, I have helped families,
               farmers, and business owners across the Saint John River Valley
-              navigate their financial futures with confidence. Our office in
+              navigate their financial futures with confidence. My office in
               Lakeville Corner means local knowledge paired with professional
               expertise.
             </p>

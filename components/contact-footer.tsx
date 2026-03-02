@@ -79,7 +79,7 @@ export function ContactFooter() {
               </h2>
               <p className="mt-5 text-pretty leading-relaxed text-muted-foreground">
                 Whether you have a quick question or need comprehensive
-                financial planning, we are here to help. Reach out and
+                financial planning, I am here to help. Reach out and
                 let&apos;s start a conversation.
               </p>
 
@@ -120,7 +120,7 @@ export function ContactFooter() {
                     Thank You!
                   </h3>
                   <p className="mt-2 text-sm text-muted-foreground">
-                    We have received your message and will be in touch within
+                    I have received your message and will be in touch within
                     one business day.
                   </p>
                 </div>
@@ -134,7 +134,7 @@ export function ContactFooter() {
                     Book a Free Consultation
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Fill out the form below and we will reach out to schedule a
+                    Fill out the form below and I will reach out to schedule a
                     time.
                   </p>
 
@@ -228,7 +228,7 @@ export function ContactFooter() {
                       name="message"
                       rows={4}
                       className="w-full resize-none rounded-lg border border-input bg-background px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-ring focus:outline-none focus:ring-2 focus:ring-ring/20"
-                      placeholder="Tell us a little about what you need..."
+                      placeholder="Tell me a little about what you need..."
                     />
                   </div>
 

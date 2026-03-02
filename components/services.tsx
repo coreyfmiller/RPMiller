@@ -53,13 +53,13 @@ export function Services() {
         {/* Heading */}
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
-            What We Do
+            What I Do
           </p>
           <h2 className="mt-3 text-balance font-serif text-3xl font-bold text-foreground sm:text-4xl">
             Services Tailored to You
           </h2>
           <p className="mt-4 text-pretty text-muted-foreground leading-relaxed">
-            From individual returns to complex corporate structures, we deliver
+            From individual returns to complex corporate structures, I deliver
             precise, personalized financial services.
           </p>
         </div>
