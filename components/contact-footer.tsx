@@ -114,7 +114,7 @@ export function ContactFooter() {
               <div className="mt-12 overflow-hidden rounded-xl border border-border shadow-sm">
                 <iframe
                   title="Office Location Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.771617495572!2d-66.2731515!3d45.8758832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca7cc8c3ed701bb%3A0x633919d3630f5509!2s30%20Sanctuary%20Ln%2C%20Lakeville%20Corner%2C%20NB%20E4B%201L5!5e0!3m2!1sen!2sca!4v1709400000000!5m2!1sen!2sca"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44747.88721617325!2d-66.29749714881514!3d45.86720817088469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca7cc4b74bbbc03%3A0x889aff098a58a98b!2sLakeville%20Corner%2C%20NB!5e0!3m2!1sen!2sca!4v1709400000001!5m2!1sen!2sca"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
