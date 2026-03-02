@@ -21,8 +21,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@rpmiller.ca",
-    href: "mailto:info@rpmiller.ca",
+    value: "info@rpmillerconsulting.com",
+    href: "mailto:info@rpmillerconsulting.com",
   },
   {
     icon: MapPin,

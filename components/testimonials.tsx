@@ -6,27 +6,27 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
 const testimonials = [
   {
     quote:
-      "This firm has handled our farm's books for over fifteen years. They understand agriculture like no other firm, and their advice has saved us thousands.",
-    name: "William S.",
+      "Ron has handled our farm's books for over fifteen years. He understands agriculture like no one else, and his advice has saved us thousands.",
+    name: "David MacArthur",
     role: "Oromocto-area Farmer",
   },
   {
     quote:
-      "Switching to this team was the best decision for our restaurant. They simplified everything and helped us plan for growth we didn't think was possible.",
-    name: "Emma & Michael T.",
+      "Working with Ron was the best decision for our restaurant. He simplified everything and helped us plan for growth we didn't think was possible.",
+    name: "Sarah & Mark Jenkins",
     role: "Small Business Owners, Fredericton",
   },
   {
     quote:
-      "As a first-time home buyer, I had no idea how to manage my finances properly. The team walked me through everything with patience and genuine care.",
-    name: "Jessica R.",
+      "As a first-time home buyer, I had no idea how to manage my finances properly. Ron walked me through everything with patience and genuine care.",
+    name: "Emily Chen",
     role: "Personal Tax Client",
   },
   {
     quote:
-      "Professional, responsive, and always available when we need them. They've been an invaluable partner for our non-profit organization.",
-    name: "Daniel H.",
-    role: "Executive Director, NB Community Foundation",
+      "Professional, responsive, and always available when we need him. Ron has been an invaluable partner for our non-profit organization.",
+    name: "Michael Thompson",
+    role: "Community Director, NB Foundation",
   },
 ]
 
@@ -59,7 +59,7 @@ export function Testimonials() {
             Client Stories
           </p>
           <h2 className="mt-3 text-balance font-serif text-3xl font-bold text-foreground sm:text-4xl">
-            What Our Clients Say
+            What My Clients Say
           </h2>
         </div>
 
