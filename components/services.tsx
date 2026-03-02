@@ -34,9 +34,9 @@ const services = [
   },
   {
     icon: PiggyBank,
-    title: "Retirement Planning",
+    title: "Expert Guidance",
     description:
-      "Long-term strategies for RRSPs, TFSAs, and pension planning to secure your financial future.",
+      "Navigating New Brunswick’s business ecosystem, including CBDC loan applications and Consultant Advisory Services (CAS) to help secure government-backed funding.",
   },
   {
     icon: ClipboardCheck,

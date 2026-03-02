@@ -189,7 +189,7 @@ export function ContactFooter() {
                       <option>Personal Accounting</option>
                       <option>Small Business Consulting</option>
                       <option>Bookkeeping</option>
-                      <option>Retirement Planning</option>
+                      <option>Expert Guidance</option>
                       <option>CRA Audit Support</option>
                       <option>Other</option>
                     </select>
