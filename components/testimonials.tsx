@@ -6,13 +6,13 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
 const testimonials = [
   {
     quote:
-      "RP Miller has handled our farm's books for over fifteen years. They understand agriculture like no other firm, and their advice has saved us thousands.",
+      "This firm has handled our farm's books for over fifteen years. They understand agriculture like no other firm, and their advice has saved us thousands.",
     name: "David T.",
     role: "Oromocto-area Farmer",
   },
   {
     quote:
-      "Switching to RP Miller was the best decision for our restaurant. They simplified everything and helped us plan for growth we didn't think was possible.",
+      "Switching to this team was the best decision for our restaurant. They simplified everything and helped us plan for growth we didn't think was possible.",
     name: "Sarah & James L.",
     role: "Small Business Owners, Fredericton",
   },
@@ -92,11 +92,10 @@ export function Testimonials() {
                 <button
                   key={i}
                   onClick={() => setCurrent(i)}
-                  className={`h-2 rounded-full transition-all ${
-                    i === current
+                  className={`h-2 rounded-full transition-all ${i === current
                       ? "w-6 bg-primary"
                       : "w-2 bg-border hover:bg-muted-foreground"
-                  }`}
+                    }`}
                   aria-label={`Go to testimonial ${i + 1}`}
                 />
               ))}

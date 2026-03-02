@@ -11,7 +11,7 @@ const highlights = [
     icon: Handshake,
     title: "Personal Relationships",
     description:
-      "We're not a faceless firm. You'll work directly with experienced professionals who know your name and your goals.",
+      "We're not a faceless firm. You'll work directly with an experienced professional who knows your name and your goals.",
   },
   {
     icon: Heart,
