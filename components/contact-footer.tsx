@@ -15,8 +15,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "(506) 555-0142",
-    href: "tel:+15065550142",
+    value: "(506) 961-4569",
+    href: "tel:+15069614569",
   },
   {
     icon: Mail,
@@ -269,9 +269,14 @@ export function ContactFooter() {
               RP Miller Consulting Inc.
             </span>
           </div>
-          <p className="text-xs text-primary-foreground/50">
-            {`\u00A9 ${new Date().getFullYear()} RP Miller Consulting Inc. All rights reserved.`}
-          </p>
+          <div className="flex flex-col items-center gap-1 sm:items-end text-xs text-primary-foreground/50">
+            <p>
+              {`\u00A9 ${new Date().getFullYear()} RP Miller Consulting Inc. All rights reserved.`}
+            </p>
+            <p>
+              Built by <a href="https://fundylogic.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground hover:underline transition-colors">Fundy Logic</a>
+            </p>
+          </div>
         </div>
       </footer>
     </>

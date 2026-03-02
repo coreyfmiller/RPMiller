@@ -34,7 +34,7 @@ export function Hero() {
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-1.5 backdrop-blur-sm">
             <Shield className="h-4 w-4 text-primary-foreground/80" />
             <span className="text-xs font-medium text-primary-foreground/80">
-              Trusted in New Brunswick since 2005
+              Trusted in New Brunswick since 2000
             </span>
           </div>
 
