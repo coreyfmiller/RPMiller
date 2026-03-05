@@ -3,7 +3,6 @@
 import { useState, type FormEvent } from "react"
 import {
   Phone,
-  Mail,
   MapPin,
   Clock,
   Send,
@@ -18,12 +17,7 @@ const contactInfo = [
     value: "(506) 961-4569",
     href: "tel:+15069614569",
   },
-  {
-    icon: Mail,
-    label: "Email",
-    value: "info@rpmillerconsulting.com",
-    href: "mailto:info@rpmillerconsulting.com",
-  },
+
   {
     icon: MapPin,
     label: "Office",
