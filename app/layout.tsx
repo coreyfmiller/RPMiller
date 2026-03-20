@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { ChatWidget } from '@/components/chat-widget'
 import './globals.css'
 
 const _inter = Inter({
@@ -34,6 +35,7 @@ export default function RootLayout({
         className={`${_inter.variable} ${_playfair.variable} font-sans antialiased`}
       >
         {children}
+        <ChatWidget />
         <Analytics />
       </body>
     </html>
