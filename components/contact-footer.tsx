@@ -34,10 +34,33 @@ const contactInfo = [
 
 export function ContactFooter() {
   const [submitted, setSubmitted] = useState(false)
+  const [spamError, setSpamError] = useState("")
+
+  const URL_PATTERN = /https?:\/\/|www\.|\.com\b|\.net\b|\.org\b|\.ru\b|\.cn\b|\.info\b|\.biz\b|\[url\]/i
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
+    setSpamError("")
     const formData = new FormData(e.currentTarget)
+
+    // Honeypot check — bots fill this hidden field, humans don't
+    if (formData.get("website")) {
+      setSubmitted(true)
+      return
+    }
+
+    // URL blocking — reject messages or names containing links
+    const message = formData.get("message")?.toString() || ""
+    const firstName = formData.get("firstName")?.toString() || ""
+    const lastName = formData.get("lastName")?.toString() || ""
+
+    if (URL_PATTERN.test(message) || URL_PATTERN.test(firstName) || URL_PATTERN.test(lastName)) {
+      setSpamError("Links are not allowed in the form. Please remove any URLs and try again.")
+      return
+    }
+
+    // Remove honeypot field before sending
+    formData.delete("website")
 
     try {
       await fetch("https://formsubmit.co/ajax/rpmillerconsultinginc@gmail.com", {
@@ -136,8 +159,18 @@ export function ContactFooter() {
               ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col gap-5">
                   {/* FormSubmit Configuration */}
-                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_captcha" value="true" />
                   <input type="hidden" name="_subject" value="New Consultation Request via Website" />
+
+                  {/* Honeypot — hidden from humans, bots fill it */}
+                  <input
+                    type="text"
+                    name="website"
+                    autoComplete="off"
+                    tabIndex={-1}
+                    aria-hidden="true"
+                    className="absolute -left-[9999px] opacity-0 h-0 w-0"
+                  />
 
                   <h3 className="font-serif text-xl font-bold text-card-foreground">
                     Book a Free Consultation
@@ -240,6 +273,10 @@ export function ContactFooter() {
                       placeholder="Tell me a little about what you need..."
                     />
                   </div>
+
+                  {spamError && (
+                    <p className="text-sm text-red-600 dark:text-red-400">{spamError}</p>
+                  )}
 
                   <Button type="submit" size="lg" className="mt-1 rounded-lg">
                     <Send className="mr-2 h-4 w-4" />
